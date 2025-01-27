@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --background-color: #F6F7FF;
+  --font-color: hsl(233, 13%, 49%);
+  --secondary-font-color: hsl(234, 14%, 74%);
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px 60px 20px;
+}
+body section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+body section .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body section .title h1 {
+  color: var(--font-color);
+  font-size: 36px;
+}
+body section .title .buttonArea {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+body section .title .buttonArea p {
+  color: var(--secondary-font-color);
+  font-weight: 600;
+  font-size: 20px;
+}
+body section .title .buttonArea .button #switch {
+  display: none;
+}
+body section .title .buttonArea .button .switch {
+  position: relative;
+  background-color: rgb(110, 111, 224);
+  background-color: linear-gradient(310deg, rgb(110, 111, 224) 0%, rgb(160, 166, 237) 100%);
+  display: flex;
+  align-items: center;
+  width: 70px;
+  height: 30px;
+  border-radius: 42px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  padding: 5px;
+}
+body section .title .buttonArea .button .slider {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  transition: all 0.5s ease-in-out;
+}
+body section .title .buttonArea .button #switch:checked ~ .switch .slider {
+  transform: translateX(40px);
+}
+body section .cards {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body section .cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 40px;
+  width: 65vw;
+  line-height: 100%;
+  border-radius: 16px;
+}
+body section .cards .card h3,
+body section .cards .card p,
+body section .cards .card h2 {
+  color: var(--font-color);
+}
+body section .cards .card h3 {
+  font-size: 22px;
+}
+body section .cards .card h2 {
+  align-items: center;
+  font-size: 70px;
+  display: flex;
+  gap: 15px;
+}
+body section .cards .card h2 span {
+  font-size: 40px;
+}
+body section .cards .card p {
+  font-weight: 600;
+}
+body section .cards .card .infos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+body section .cards .card .infos .line {
+  width: 65vw;
+  height: 1px;
+  background-color: var(--secondary-font-color);
+}
+body section .cards .card button {
+  margin: 20px 0 0 0;
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  background: rgb(110, 111, 224);
+  background: linear-gradient(310deg, rgb(110, 111, 224) 0%, rgb(160, 166, 237) 100%);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+body section .cards .card2 {
+  background: rgb(110, 111, 224);
+  background: linear-gradient(310deg, rgb(110, 111, 224) 0%, rgb(160, 166, 237) 100%);
+}
+body section .cards .card2 p,
+body section .cards .card2 h3,
+body section .cards .card2 h2 {
+  color: #fff;
+}
+body section .cards .card2 .infos .line {
+  background-color: #fff;
+}
+body section .cards .card2 .infos button {
+  color: #6e6fe0;
+  background: #fff;
+}
+
+@media (min-width: 1440px) {
+  body {
+    padding: 20px;
+  }
+  body section {
+    padding: 0;
+    gap: 40px;
+  }
+  body section .title {
+    line-height: 90%;
+  }
+  body section .title h1 {
+    margin-top: 0px;
+    font-size: 28px;
+  }
+  body section .title .buttonArea p {
+    font-size: 22px;
+  }
+  body section .cards {
+    flex-direction: row;
+    gap: 0;
+  }
+  body section .cards .card {
+    width: 20vw;
+    height: 430px;
+  }
+  body section .cards .card .infos .line {
+    width: 20vw;
+  }
+  body section .cards .card2 {
+    scale: 110%;
+  }
+}/*# sourceMappingURL=style.css.map */
